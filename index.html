@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href='index.css'>
+  <script type="text/javascript" src="./src/Log.js"></script>
+  <script type="text/javascript" src="./src/Prize.js"></script>
+  <script type="text/javascript" src="./src/Lane.js"></script>
+  <script type="text/javascript" src="./src/Vehicle.js"></script>
+  <script type="text/javascript" src="./src/Frog.js"></script>
+  <script type="text/javascript" src="./src/GameBoard.js"></script>
+  <script type="text/javascript" src="./src/Game.js"></script>
+  <script type="text/javascript" src="./src/Adapter.js"></script>
+  <script type="text/javascript" src="./src/index.js"></script>
+  
+  <title>TOADER</title>
+</head>
+<body>
+  <div class = "header">HEADER</div>
+  
+  <div class="main">
+
+    <div class="edges"></div>
+
+    <div id="game-holder">
+      <img id= "game-board"src="./img/gameboard.png">
+      <div id="form-overlay">
+        <form id="form">
+          <lable>AVATAR:</lable>
+          <div class="select-div"> 
+            <lable id="levelLabel">LEVEL:</lable>
+            <select class="level">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+          </div>
+          <div class="submit-div">
+            <input type="submit" value="START!" class="btn"></input>
+          </div>
+        </form>
+      </div>
+      <div id="frog" ></div>
+      <div id="prize" ></div>
+      <div id="death-overlay"> GAME OVER, IDIOT! </div>
+      <div id="win-overlay"> YOU WONNNNNNN! </div>
+      <div id="river"></div>
+      <div id="winStrip"></div>
+      <div id="start-overlay"> 
+          <h2>GOAL: Get across the road and the river to your prize!</h2>
+          <h2>Use the arrow keys to move left, right, up, down</h2>
+          <h2>DON'T GET HIT!</h2>
+          <h2>You have 3 lives...</h2>
+          <h1>READY TO GO?</h1>
+          <h3>Hit the space to start or pause</h3>
+      </div>
+      <div id="spacebar-overlay"> PRESS THE SPACE BAR TO START </div>
+      <div id="lives-overlay"> YA DIED, BITCH! <span></span></br> HIT ENTER TO CONTINUE</div>
+      <div id="three-count" > 3 </div>
+      <div id="pause-display" > PAUSED </div>
+    </div>
+
+    <div class="edges"></div>
+  </div>
+  
+  
+</body>
+</html>
+
+
+
+
+
